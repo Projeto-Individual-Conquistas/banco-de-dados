@@ -86,6 +86,7 @@ CREATE TABLE `conquista` (
   `fk_biblioteca_historico` INT NOT NULL,
   `fk_usuario_historico` INT NOT NULL,
   `fk_jogo_historico` INT NOT NULL,
+  `aproveitamento` DECIMAL (5,2),
   `data_historico` DATETIME DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_historico`, `fk_biblioteca_historico`, `fk_usuario_historico`, `fk_jogo_historico`),
     CONSTRAINT `fk_historico_biblioteca_de_jogos`
