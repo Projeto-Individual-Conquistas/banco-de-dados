@@ -81,6 +81,17 @@ CREATE TABLE `conquista` (
     FOREIGN KEY (`fk_jogo`)
     REFERENCES `jogo` (`id_jogo`));
     
+    CREATE TABLE `historico` (
+  `id_historico` INT NOT NULL,
+  `fk_biblioteca_historico` INT NOT NULL,
+  `fk_usuario_historico` INT NOT NULL,
+  `fk_jogo_historico` INT NOT NULL,
+  `data_historico` DATETIME DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id_historico`, `fk_biblioteca_historico`, `fk_usuario_historico`, `fk_jogo_historico`),
+    CONSTRAINT `fk_historico_biblioteca_de_jogos`
+    FOREIGN KEY (`fk_biblioteca_historico` , `fk_usuario_historico` , `fk_jogo_historico`)
+    REFERENCES `biblioteca_de_jogos` (`id_biblioteca` , `fk_usuario` , `fk_jogo`));
+    
     
 INSERT INTO usuario (apelido, email, senha) VALUES
 ('MestreDoSQL', 'admin@guildasql.com', 'hackermestre42'),
@@ -124,4 +135,5 @@ INSERT INTO biblioteca_de_jogos  (id_biblioteca, fk_usuario, fk_jogo, conquistas
     (4, 4, 1, 55, '300', '2025-10-15', '1.0', 0);
     
     select * from mensage_usuario;
-
+    
+    select * from usuario;
