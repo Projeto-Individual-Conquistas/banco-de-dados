@@ -82,7 +82,7 @@ CREATE TABLE `conquista` (
     REFERENCES `jogo` (`id_jogo`));
     
     CREATE TABLE `historico` (
-  `id_historico` INT NOT NULL,
+  `id_historico` INT AUTO_INCREMENT,
   `fk_biblioteca_historico` INT NOT NULL,
   `fk_usuario_historico` INT NOT NULL,
   `fk_jogo_historico` INT NOT NULL,
