@@ -1,4 +1,4 @@
-create database projeto_individual;
+Create database projeto_individual;
 
 use projeto_individual;
 
@@ -94,11 +94,12 @@ CREATE TABLE `conquista` (
     REFERENCES `biblioteca_de_jogos` (`id_biblioteca` , `fk_usuario` , `fk_jogo`));
     
     
+
+    
 INSERT INTO usuario (apelido, email, senha) VALUES
-('MestreDoSQL', 'admin@guildasql.com', 'hackermestre42'),
-('NoobSaibot_DB', 'fatality@databattle.com', 'getoverhere123'),
-('QueenOfLatency', 'lagprincess@gaming.net', 'naologas'),
-('Headshot_Dev', 'dev.sniper@codetable.io', 'cachemissed');
+('XtremeduSamba', 'luizfelipeparaiso@gmail.com', 'sla123'),
+('sb._._.', 'iuryburigo@gmail.com', 'sla123'),
+('Bolacha', 'victoria@gmail.com', 'sla123'),
 
 select * from usuario;
 
@@ -107,10 +108,10 @@ INSERT INTO jogo (capa, nome, genero, classificacao, dt_lancamento, publicadora,
 ('capa_Expedition', 'Expedition 33', 'rpg', 16, '2025-03-05', 'Xbox Game Studios', 'Blade Theory', 249.90, 60.00, 0, 0),
 ('capa_Witcher', 'The Witcher 3: Wild Hunt', 'rpg', 16, '2015-05-19', 'CD Projekt', 'CD Projekt RED', 99.90, 50.00, 0, 0),
 ('capa_Baldurs', 'Baldur''s Gate 3', 'rpg', 18, '2023-08-03', 'Larian Studios', 'Larian Studios', 299.90, 150.00, 1, 0),
-('capa_Brawlhalla', 'Brawlhalla', 'acao', 10, '2017-10-17', 'Ubisoft', 'Blue Mammoth Games', 0.00, 2.00, 1, 1),
+('capa_Brawlhalla', 'Brawlhalla', 'luta', 10, '2017-10-17', 'Ubisoft', 'Blue Mammoth Games', 0.00, 2.00, 1, 1),
 ('capa_Jurassic', 'Jurassic Evolution 3', 'estrategia', 10, '2025-10-15', 'Frontier Developments', 'Frontier Developments', 179.99, 15.00, 0, 0),
 ('capa_Skyrim', 'The elder scrolls V', 'rpg', 16, '2011-11-11', 'Bethesda Softworks', 'Bethesda Game Studios', 79.90, 12.00, 0, 0),
-('capa_Elden', 'Elden Ring', 'acao', 16, '2022-02-25', 'Bandai Namco Entertainment', 'FromSoftware', 249.99, 45.00, 1, 0),
+('capa_Elden', 'Elden Ring', 'rpg', 16, '2022-02-25', 'Bandai Namco Entertainment', 'FromSoftware', 249.99, 45.00, 1, 0),
 ('capa_Ride6', 'RIDE 6', 'esporte', 10, '2025-07-18', 'Milestone S.r.l.', 'Milestone S.r.l.', 269.90, 55.00, 1, 0),
 ('capa_Battlefield', 'Battlefield 6', 'acao', 16, '2024-11-20', 'Electronic Arts', 'DICE', 359.00, 95.00, 1, 1),
 ('capa_Spiderman', 'Marvel''s Spider-Man 2', 'acao', 14, '2023-10-20', 'Sony Interactive Entertainment', 'Insomniac Games', 349.90, 80.00, 0, 0),
@@ -129,12 +130,4 @@ INSERT INTO jogo (capa, nome, genero, classificacao, dt_lancamento, publicadora,
 ('capa_AoE4', 'Age of Empires IV', 'estrategia', 14, '2021-10-28', 'Xbox Game Studios', 'Relic Entertainment', 199.99, 93.00, 1, 0),
 ('capa_MK1', 'Mortal Kombat 1', 'luta', 18, '2023-09-19', 'Warner Bros. Games', 'NetherRealm Studios', 329.99, 85.00, 1, 1);
 
-INSERT INTO biblioteca_de_jogos  (id_biblioteca, fk_usuario, fk_jogo, conquistas, horas_jogo, dt_compra, versao, lista_desejos) VALUES 
-    (1, 1, 1, 45, '354', '2025-10-15', '1.0', 0),
-    (1, 1, 2, 50, '240', '2025-10-15', '1.0', 0),
-    (2, 2, 1, 32, '90', '2025-10-15', '1.0', 0),
-    (4, 4, 1, 55, '300', '2025-10-15', '1.0', 0);
-    
-    select * from mensage_usuario;
-    
-    select * from usuario;
+
