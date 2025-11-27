@@ -99,7 +99,7 @@ CREATE TABLE `conquista` (
 INSERT INTO usuario (apelido, email, senha) VALUES
 ('XtremeduSamba', 'luizfelipeparaiso@gmail.com', 'sla123'),
 ('sb._._.', 'iuryburigo@gmail.com', 'sla123'),
-('Bolacha', 'victoria@gmail.com', 'sla123'),
+('Bolacha', 'victoria@gmail.com', 'sla123');
 
 select * from usuario;
 
